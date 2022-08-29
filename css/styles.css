@@ -34,7 +34,18 @@ p {
 img {
   display: block;
 }
-
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -49,7 +60,7 @@ img {
   font-family: Raleway, sans-serif;
   font-style: normal;
   font-weight: 700;
-   font-size: 26px;
+  font-size: 26px;
   line-height: 31px;
   letter-spacing: 0.03em;
   margin-right: 93px;
@@ -64,15 +75,15 @@ img {
 
   /*навігація*/
 }
-.nav-list{
+.nav-list {
   margin-right: auto;
 }
-.site-nav{
+.site-nav {
   display: flex;
   gap: 50px;
 }
-.site-nav li  :last-child {
-margin-right: 0px;
+.site-nav li :last-child {
+  margin-right: 0px;
 }
 
 .site-nav {
@@ -92,9 +103,8 @@ margin-right: 0px;
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: #2196f3;
-
 }
-.link{
+.link {
   font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -103,14 +113,14 @@ margin-right: 0px;
   padding-bottom: 32px;
   display: block;
 }
-  /*контакти*/
+/*контакти*/
 .contact-list {
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.contact-list{
+.contact-list {
   display: flex;
   gap: 50px;
 }
@@ -176,11 +186,11 @@ margin-right: 0px;
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.fichers-list{
+.fichers-list {
   display: flex;
   gap: 30px;
 }
-.fichers-card{
+.fichers-card {
   width: 270px;
 }
 .fichers-header {
@@ -212,7 +222,7 @@ margin-right: 0px;
   text-align: center;
   letter-spacing: 0.03em;
 }
-.work-cards{
+.work-cards {
   display: flex;
   gap: 30px;
   margin-top: 50px;
@@ -231,17 +241,18 @@ margin-right: 0px;
   letter-spacing: 0.03em;
   color: #212121;
 }
-.team-list{
+.team-list {
   display: flex;
   gap: 30px;
   margin-top: 50px;
 }
-.team-window{
+.team-window {
   background-color: #ffffff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.wrapper-team{
+.wrapper-team {
   padding: 30px;
 }
 .team-name {
@@ -297,7 +308,7 @@ margin-right: 0px;
 .adress-street:focus {
   color: #2196f3;
 }
-.bottom-contact{
+.bottom-contact {
   margin-top: 9px;
 }
 .adress-link {
@@ -314,8 +325,15 @@ margin-right: 0px;
 }
 /*портфоліо*/
 
-.portf-button-pages {
+.portf-b {
   background-color: #ffffff;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.port-list {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
 }
 
 .button-tap-l {
@@ -326,8 +344,10 @@ margin-right: 0px;
   color: #ffffff;
   background-color: #2196f3;
   border-radius: 4px;
+  border: none;
   cursor: pointer;
   font-family: inherit;
+  padding: 6px 22px;
 }
 .button-tap-l:hover,
 .button-tap-l:focus {
@@ -341,8 +361,10 @@ margin-right: 0px;
   letter-spacing: 0.03em;
   background-color: #f5f4fa;
   border-radius: 4px;
+  border: none;
   cursor: pointer;
   font-family: inherit;
+  padding: 6px 22px;
 }
 .button-tap:hover,
 .button-tap:focus {
@@ -350,6 +372,16 @@ margin-right: 0px;
   color: #ffffff;
 }
 /*секція блоків робіт*/
+.block-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 34px;
+  gap: 30px;
+}
+.block-card {
+  border-top: none;
+  padding: 20px 24px;
+}
 
 .block-topic {
   background: #ffffff;
@@ -367,5 +399,6 @@ margin-right: 0px;
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0.03em;
+  margin-top: 4px;
   color: #757575;
 }
