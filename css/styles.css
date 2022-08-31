@@ -1,12 +1,9 @@
 body {
-  background-color: 
-  #FFFFFF;
-  font-family: "Raleway", sans-serif;
+  background-color: #ffffff;
   font-family: "Roboto", sans-serif;
-  font-style: normal;
 }
 .container {
-  width: 1200px;
+  width: 1230px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -14,6 +11,7 @@ body {
 }
 header {
   background-color: #ffffff;
+  border-bottom: 1px solid #ececec;
 }
 
 ul {
@@ -32,6 +30,7 @@ h6,
 p {
   margin: 0;
 }
+
 img {
   display: block;
 }
@@ -99,13 +98,15 @@ img {
 }
 .site-nav .link {
   color: #212121;
-  caret-color: #2196f3;
 }
+.current.link,
+.current.links,
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: #2196f3;
 }
-.link {
+
+.link.current.links {
   font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -114,16 +115,20 @@ img {
   padding-bottom: 32px;
   display: block;
 }
+.current.links {
+  text-decoration: none;
+}
 /*контакти*/
 .contact-list {
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-}
-.contact-list {
   display: flex;
   gap: 50px;
+}
+.header-contact {
+  display: flex;
 }
 .contact-link {
   color: #757575;
@@ -183,7 +188,6 @@ img {
 /*секція наших властивостей*/
 
 .fichers {
-  background-color: #f5f5f5;
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -192,7 +196,7 @@ img {
   gap: 30px;
 }
 .fichers-card {
-  width: 270px;
+  flex-basis: calc((100% - 3 * 30px) / 4);
 }
 .fichers-header {
   font-weight: 700;
@@ -213,7 +217,6 @@ img {
 /*чим ми займаємося*/
 
 .works {
-  background-color: #f5f5f5;
   padding-bottom: 94px;
 }
 .works-header {
@@ -376,7 +379,7 @@ img {
 .block-list {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 34px;
+  margin-top: 50px;
   gap: 30px;
 }
 .block-card {
