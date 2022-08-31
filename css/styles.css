@@ -3,7 +3,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 .container {
-  width: 1230px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -11,14 +11,15 @@ body {
 }
 header {
   background-color: #ffffff;
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid
+  #ECECEC;
 }
 
 ul {
   list-style: none;
 }
 ul {
-  margin: 0;
+margin: 0;
   padding: 0;
 }
 h1,
@@ -28,7 +29,7 @@ h4,
 h5,
 h6,
 p {
-  margin: 0;
+margin: 0;
 }
 
 img {
@@ -64,6 +65,8 @@ img {
   line-height: 31px;
   letter-spacing: 0.03em;
   margin-right: 93px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: black;
   text-decoration: none;
 }
@@ -174,6 +177,7 @@ img {
   letter-spacing: 0.06em;
   background-color: #2196f3;
   color: #ffffff;
+  border: 0px;
   border-radius: 4px;
   cursor: pointer;
   font-family: inherit;
@@ -385,10 +389,10 @@ img {
 .block-card {
   border-top: none;
   padding: 20px 24px;
+  border: 1px solid #eeeeee;
 }
 
 .block-topic {
-  background: #ffffff;
   border: 1px solid #eeeeee;
 }
 .block-header {
